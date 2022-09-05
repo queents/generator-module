@@ -1,0 +1,22 @@
+<?php
+
+
+namespace Modules\{{ module }}\Vilt\Resources\{{ resourceClass }}\Traits;
+
+trait Translations
+{
+    public function loadTranslations(): array
+    {
+        return [
+            "index" => __("{{ headerTranslationName }}"),
+            "create" => __('Create ' . "{{ fieldsTranslationName }}"),
+            "bulk" => __('Delete Selected ' . "{{ fieldsTranslationName }}"),
+            "edit_title" => __('Edit ' . "{{ fieldsTranslationName }}"),
+            "create_title" => __('Create New ' . "{{ fieldsTranslationName }}"),
+            "view_title" => __('View ' . "{{ fieldsTranslationName }}"),
+            "delete_title" => __('Delete ' . "{{ fieldsTranslationName }}"),
+            "bulk_title" => __('Run Bulk Action To ' . "{{ fieldsTranslationName }}"),
+        ];
+    }
+}
+

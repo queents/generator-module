@@ -1,0 +1,22 @@
+<?php
+
+
+namespace Modules\{{ moduleName }}\Vilt\Resources\{{ resourceName }}\Actions;
+
+use Modules\Base\Services\Components\Actions;
+
+class {{ modelName }}Action extends Actions
+{
+    public function setup(): void
+    {
+        $this->name("{{ actionName }}");
+        $this->label(__('{{ actionLabel }}'));
+        $this->type("success");
+        $this->icon("bx bx-circle");
+        $this->modal(null);
+        $this->action(null);
+        $this->url(null);
+        $this->can(true);
+    }
+}
+

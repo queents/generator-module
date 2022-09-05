@@ -1,0 +1,47 @@
+{
+    "name": "queents/generator-module",
+    "description": "Generator Commands to Generate Resources, Pages, Actions, Widgets, Modals to VILT Framework",
+    "type": "laravel-module",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "VILT",
+        "generator",
+        "resource",
+        "page",
+        "widget",
+        "pages",
+        "modal",
+        "admin one",
+        "vuejs",
+        "ineriajs",
+        "tailwind.css"
+    ],
+    "homepage": "https://www.queentechsolutions.net",
+    "authors": [
+        {
+            "name": "Fady Mondy",
+            "email": "info@3x1.io",
+            "role": "Senior Fullstack Developer"
+        }
+    ],
+    "require": {
+        "joshbrw/laravel-module-installer": "^2.0",
+        "nwidart/laravel-modules": "^9.0",
+        "krlove/eloquent-model-generator": "^2.0",
+        "doctrine/dbal": "^3.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\CustomGenerator\\": ""
+        }
+    }
+}

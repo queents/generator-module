@@ -1,0 +1,18 @@
+<?php
+
+
+namespace Modules\{{ moduleName }}\Pages;
+
+use Modules\Base\Services\Components\Base\Render;
+use Modules\Base\Services\Resource\Page;
+
+class {{ modelName }}Page extends Page
+{
+    public ?string $path = "{{ pathName }}";
+    public ?string $group = "Content";
+    public ?string $icon = "bx bxs-circle";
+
+    public function index(){
+        return Render::make('{{ modelName }}')->module('{{ moduleName }}')->data([])->render();
+    }
+}

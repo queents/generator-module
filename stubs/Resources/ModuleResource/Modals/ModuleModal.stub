@@ -1,0 +1,18 @@
+<?php
+
+
+namespace Modules\{{ moduleName }}\Vilt\Resources\{{ resourceName }}\Modals;
+
+use Modules\Base\Services\Components\Modals;
+
+class {{ modelName }}Modal extends Modals
+{
+    public function setup(): void
+    {
+        $this->name("{{ modelName }}");
+        $this->label(__('{{ actionLabel }}'));
+        $this->rows([]);
+        $this->buttons([]);
+    }
+}
+

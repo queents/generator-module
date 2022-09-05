@@ -1,0 +1,20 @@
+<?php
+
+
+namespace Modules\{{ moduleName }}\Vilt\Resources\{{ classResource }}\Routes;
+use Modules\{{ moduleName }}\Vilt\Resources\{{ classResource }};
+
+use Modules\Base\Services\Components\Routes;
+
+class {{ modelName }}Route extends Routes
+{
+    public function setup(): void
+    {
+         $this->name('{{ routeName }}');
+         $this->type('{{ requestType }}');
+         $this->method('{{ methodName }}');
+         $this->controller({{ classResource }}::class);
+         $this->path('{{ pathRoute }}');
+    }
+}
+

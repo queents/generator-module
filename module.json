@@ -1,0 +1,26 @@
+{
+    "name": "Generator",
+    "alias": "generator",
+    "description": "Generator Commands to Generate Resources, Pages, Actions, Widgets, Modals to VILT Framework",
+    "keywords": [
+        "laravel",
+        "VILT",
+        "generator",
+        "resource",
+        "page",
+        "widget",
+        "pages",
+        "modal",
+        "admin one",
+        "vuejs",
+        "ineriajs",
+        "tailwind.css"
+    ],
+    "priority": 0,
+    "providers": [
+        "Modules\\Generator\\Providers\\GeneratorServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

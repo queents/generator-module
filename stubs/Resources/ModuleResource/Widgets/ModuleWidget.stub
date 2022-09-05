@@ -1,0 +1,21 @@
+<?php
+
+
+namespace Modules\{{ moduleName }}\Vilt\Resources\{{ resourceName }}\Widgets;
+
+use Modules\Base\Services\Components\Widgets;
+
+class {{ modelName }}Widget extends Widgets
+{
+
+ public function setup(): void
+    {
+         $this->name("{{ modelName }}");
+         $this->label(__('{{ actionLabel }}'));
+         $this->icon('bx bx-user');
+         $this->type('success');
+         $this->value(0);
+    }
+
+}
+

@@ -1,0 +1,30 @@
+<?php
+
+
+namespace Modules\{{ module }}\Vilt\Resources;
+
+use Modules\{{ module }}\Entities\{{ model }};
+use Modules\Base\Services\Resource\Resource;
+use Modules\{{ module }}\Vilt\Resources\{{ model }}Resource\Traits\Translations;
+use Modules\{{ module }}\Vilt\Resources\{{ model }}Resource\Traits\Components;
+
+{{ nameSpaces }}
+
+class {{ model }}Resource extends Resource
+{
+        use Translations,Components;
+
+        public ?string $model = {{ model }}::class;
+        public ?string $icon = "bx bxs-circle";
+        public ?string $group = "Content";
+        public ?bool $api = true;
+
+        public function rows():array
+        {
+            return [
+                {{ fields }}
+            ];
+
+        }
+
+}
