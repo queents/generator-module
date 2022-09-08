@@ -55,19 +55,5 @@ class WidgetGeneratorCommand extends Command
         $this->info('The Page Has Been Generated :)');
     }
 
-    /**
-     * Get the console command arguments.
-     *
-     * @return array
-     */
-    protected function getArguments()
-    {
-        return [
-            ['actionName', InputArgument::REQUIRED, 'An example argument.'],
-            ['resourceName', InputArgument::REQUIRED, 'An example argument.'],
-            ['moduleName', InputArgument::REQUIRED, 'An example argument.'],
-        ];
-    }
-
 
 }
