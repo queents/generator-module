@@ -13,7 +13,6 @@ trait CanManipulateFiles
         try{
             foreach ($this->folderDirectory as $folder) {
                 File::makeDirectory(module_path($this->moduleName) .  $folder);
-
             }
 
             if (File::exists($this->targetPath))

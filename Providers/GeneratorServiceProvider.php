@@ -11,6 +11,7 @@ use Modules\Generator\Console\PageGeneratorCommand;
 use Modules\Generator\Console\PermissionGeneratorCommand;
 use Modules\Generator\Console\ResourceGeneratorCommand;
 use Modules\Generator\Console\RouteGeneratorCommand;
+use Modules\Generator\Console\ViewsGeneratorCommand;
 use Modules\Generator\Console\WidgetGeneratorCommand;
 
 class GeneratorServiceProvider extends ServiceProvider
@@ -44,6 +45,7 @@ class GeneratorServiceProvider extends ServiceProvider
             PageGeneratorCommand::class,
             WidgetGeneratorCommand::class,
             RouteGeneratorCommand::class,
+            ViewsGeneratorCommand::class,
         ]);
         $this->registerTranslations();
         $this->registerConfig();
