@@ -55,20 +55,20 @@ class ViewsGenerator implements GeneratorInterface
             "titleLabel" =>Str::ucfirst(Str::singular($this->modelName)),
             "actionLabel" => $this->actionLabel,
             "moduleName" =>$this->moduleName,
-        ]);
+        ], module_path(env('THEME_MODULE')) . '/stubs/');
 
         $this->copyStubToApp($editStub,$editFile,[
             "tableName" =>$this->actionName,
             "titleLabel" =>Str::ucfirst(Str::singular($this->modelName)),
             "actionLabel" => $this->actionLabel,
             "moduleName" =>$this->moduleName,
-        ]);
+        ],module_path(env('THEME_MODULE')) . '/stubs/');
 
         $this->copyStubToApp($createStub,$createFile,[
             "tableName" =>$this->actionName,
             "titleLabel" =>Str::ucfirst(Str::singular($this->modelName)),
             "actionLabel" => $this->actionLabel,
             "moduleName" =>$this->moduleName,
-        ]);
+        ],module_path(env('THEME_MODULE')) . '/stubs/');
     }
 }

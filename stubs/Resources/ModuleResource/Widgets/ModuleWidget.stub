@@ -12,6 +12,7 @@ class {{ modelName }}Widget extends Widgets
     {
          $this->name("{{ modelName }}");
          $this->label(__('{{ actionLabel }}'));
+         $this->description('{{ actionLabel }}');
          $this->icon('bx bx-user');
          $this->type('success');
          $this->value(0);

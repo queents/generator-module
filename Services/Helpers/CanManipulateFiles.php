@@ -23,13 +23,21 @@ trait CanManipulateFiles
 
     }
 
-    protected function copyStubToApp(string $stub, string $targetPath, array $replacements = []): void
+    protected function copyStubToApp(string $stub, string $targetPath, array $replacements = [], $customPath="/../../stubs/"): void
     {
         $filesystem = app(Filesystem::class);
 
-        if (! $this->fileExists($stubPath = base_path("/../../stubs/{$stub}.stub"))) {
-            $stubPath = __DIR__ . "/../../stubs/{$stub}.stub";
+        if($customPath === '/../../stubs/'){
+            if (! $this->fileExists($stubPath = base_path("{$customPath}{$stub}.stub"))) {
+                $stubPath = __DIR__ . "{$customPath}{$stub}.stub";
+            }
         }
+        else {
+            if (! $this->fileExists($stubPath = "{$customPath}{$stub}.stub")) {
+                $stubPath = "{$customPath}{$stub}.stub";
+            }
+        }
+
 
         $stub = Str::of($filesystem->get($stubPath));
 
